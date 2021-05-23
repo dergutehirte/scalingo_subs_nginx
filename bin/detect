@@ -1,3 +1,6 @@
 #!/bin/bash
-echo "Juhu" && exit 0
+
+# Always accept the nginx buildpack
+echo "Nginx"
+exit 0
 
