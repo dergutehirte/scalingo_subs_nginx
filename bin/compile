@@ -48,8 +48,8 @@ source "$BUILD_DIR/.profile.d/nginx.sh"
 
 cp "$basedir/../config/nginx.conf.erb" "$BUILD_DIR/base_nginx.conf.erb"
 
-#mv /app/vendor/nginx "$BUILD_DIR/vendor/nginx"
-cp "$basedir/nginx" "$BUILD_DIR/vendor/nginx"
+mv /app/vendor/nginx "$BUILD_DIR/vendor/nginx"
+cp -f "$basedir/nginx" "$BUILD_DIR/vendor/nginx/sbin/"
 
 mkdir -p "bin"
 
